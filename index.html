@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/bootstrap.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body onload="saveResult()">
+    <div class="container mt-3 p-3">
+      <h1 class="text-center text-white">My Books</h1>
+      <div class="box">
+        <form id="myForm" class="mt-5">
+          <div class="row g-3">
+            <div class="col-md-6 col-12">
+              <h4 class="title">Kitob nomi</h4>
+              <input
+                class="form-control"
+                type="text"
+                id="bookName"
+                placeholder="Please enter search book name"
+              />
+            </div>
+            <div class="col-md-6 col-12">
+              <h4 class="title">Kitob muallifi</h4>
+              <input
+                class="form-control"
+                type="text"
+                id="bookAuthor"
+                placeholder="Enter book author name"
+              />
+            </div>
+            <div class="col-md-6 col-12">
+              <h4>Kitobni o'qishni boshlagan kun</h4>
+              <input id="bookStart" type="date" class="form-control" />
+            </div>
+            <div class="col-md-6 col-12">
+              <h4>Muddat(dedline)</h4>
+              <input id="bookEnd" type="date" class="form-control" />
+            </div>
+            <div class="col-md-3">
+              <h4>Qolgan Vaqt</h4>
+              <input id="time" disabled type="time" class="form-control" />
+            </div>
+          </div>
+          <button type="submit" class="btn btn-success mt-3 mb-2">
+            Submit
+          </button>
+        </form>
+        <div id="result"></div>
+        <!-- <button id="cancel" class="btn btn-danger">Click</button> -->
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
